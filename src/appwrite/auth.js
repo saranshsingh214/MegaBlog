@@ -18,7 +18,7 @@ export class AuthService{
             (ID.unique(), email, password, name);
 
             if(userAccount){
-                //call another method to directly login
+                //called another method to directly login
                 return this.login({email, password});
             }
             else{
